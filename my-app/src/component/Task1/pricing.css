@@ -1,0 +1,25 @@
+.pricing_comntainer{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing_head_container{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.pricing_head{
+    color: #7c80c4;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.pricing_header_container{
+   padding-top: 10px;
+}
+
+.pricing_header{
+    color: #000;
+    font-size: 25px;
+    font-weight: 800;
+}

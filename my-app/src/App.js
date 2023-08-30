@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+import { Grid } from '@mui/material';
 import './App.css';
+import Pricing from './component/Task1/Pricing';
 
 function App() {
   return (
-    <div className="App">
-    Rajan 
-    </div>
+      <Grid>
+        <Pricing />
+      </Grid>
   );
 }
 
