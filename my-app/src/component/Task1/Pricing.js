@@ -1,8 +1,7 @@
 import React from 'react'
 import { Grid, Typography, Card, CardActions, CardContent, Button } from '@mui/material'
-import  objArr  from './Data'
+import  objArr  from '../Data'
 import './pricing.css';
-import DoneIcon from '@mui/icons-material/Done';
 
 function Pricing() {
     return (
@@ -19,27 +18,19 @@ function Pricing() {
             <Grid container>
             { objArr.map((data , key) => {
                     return (
-                        <Grid item lg={12} md={12} sm={12} xs={12} key={key}>
+                        <Grid item lg={4} md={4} sm={6} xs={12} key={key}>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardContent>
                                     <Grid>{data.plan_rs}</Grid>
                                     <Grid>{data.plan}</Grid>
                                     <Grid>{data.billed}</Grid>
-                                    <Grid>
-                                    <DoneIcon />
-                                    {data.feature_list_1}</Grid>
-                                    <Grid>
-                                    <DoneIcon />
-                                    {data.feature_list_2}</Grid>
-                                    <Grid>
-                                    <DoneIcon />
-                                    {data.feature_list_3}</Grid>
-                                    <Grid>
-                                    <DoneIcon />
-                                    {data.feature_list_4}</Grid>
-                                    <Grid>
-                                    <DoneIcon />
-                                    {data.feature_list_5}</Grid>                                    
+                                    <ul>
+                                    <li>{data.feature_list_1}</li>
+                                    <li>{data.feature_list_2}</li>
+                                    <li>{data.feature_list_3}</li>
+                                    <li>{data.feature_list_4}</li>
+                                    <li>{data.feature_list_5}</li>
+                                    </ul>
                                 </CardContent>
                                 <CardActions>
                                     <Button size="small">Get started</Button>
