@@ -6,9 +6,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import './showTableStyle.css'
 
 export default function ShowTable() {
+  // useState for storing data
   const [query , setQuery] = useState("")
-
+ 
+  // create multiple searching key
   const keys = ['name','category','price']
+
+  // serching function
   const search=(data) => {
      return data.filter((item)=>keys.some(key =>item[key].toString().toLowerCase().includes(query))
       );
@@ -32,7 +36,8 @@ export default function ShowTable() {
         variant="outlined"
       />
       </Grid>
-  
+
+      {/* table component call */}
        <TableData data={search(products)} />
     </Container>
   );

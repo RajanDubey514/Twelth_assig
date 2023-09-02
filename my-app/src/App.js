@@ -1,4 +1,3 @@
-import './App.css';
 import Pricing from './component/Task1/Pricing';
 import Header from './component/header/Header';
 import {BrowserRouter ,Route , Routes} from "react-router-dom";

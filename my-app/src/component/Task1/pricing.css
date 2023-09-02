@@ -52,12 +52,12 @@ ul {
   .card_Container {
     border: 1px solid #434ce7;
     border-radius: 10px !important;
-    padding:"20px";
-    margin:"10px" ;
+    padding:"20px" !important;
+    margin:"10px" !important;
     display: block;
     top: 0px;
     position: relative;
-    background-color: #f2f8f9;
+    background-color: #fff;
     text-decoration: none;
     z-index: 0;
     overflow: hidden; 
@@ -69,7 +69,7 @@ ul {
       box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
       top: -4px;
       border: 1px solid #cccccc;
-      background-color: white;
+      background-color: #f2f8f9;
     }
     &:hover:before {
       transform: scale(2.15);
@@ -121,7 +121,7 @@ ul {
     color: #fff !important;
 }
 
-
+/* css for pricing tablet screen responsiveness start */
 @media only screen and (max-width: 1200px){
     .pricing_head_container{
         margin-top: 20px !important;
@@ -162,8 +162,9 @@ ul {
     }
 
 }
+/* css for pricing screen responsiveness end */
 
-
+/* css for pricing mobile screen responsiveness start */
 @media only screen and (max-width: 767px){
     .pricing_head_container{
         margin-top: 10px !important;
@@ -204,3 +205,5 @@ ul {
     }
 
 }
+/* css for pricing screen responsiveness end */
+

@@ -39,6 +39,8 @@
     border-radius: 40px;
 }
 
+/* css for responsiveness start */
+
 @media only screen and (max-width: 767px){
     .appBar_name{
       font-size: 14px !important;
@@ -65,3 +67,6 @@
         padding-right: 10px;
     }
 }
+
+/* css for responsiveness end */
+

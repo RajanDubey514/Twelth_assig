@@ -45,5 +45,4 @@ function Pricing() {
         </Container>
     )
 }
-
 export default Pricing
