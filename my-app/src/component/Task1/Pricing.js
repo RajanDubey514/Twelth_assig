@@ -18,13 +18,13 @@ function Pricing() {
             <Grid container>
             { objArr.map((data , key) => {
                     return (
-                        <Grid item lg={4} md={4} sm={6} xs={12} key={key}>
-                            <Card sx={{ maxWidth: 345 }}>
+                        <Grid item lg={4} md={4} sm={6} xs={12} key={key} >
+                            <Card sx={{ padding:"20px", margin:"10px"}} className='card_Container'>
                                 <CardContent>
-                                    <Grid>{data.plan_rs}</Grid>
-                                    <Grid>{data.plan}</Grid>
-                                    <Grid>{data.billed}</Grid>
-                                    <ul>
+                                    <Grid className='card_heading1'>{data.plan_rs}</Grid>
+                                    <Grid className='card_heading2'>{data.plan}</Grid>
+                                    <Grid className='card_heading3'>{data.billed}</Grid>
+                                    <ul className='Card_list'>
                                     <li>{data.feature_list_1}</li>
                                     <li>{data.feature_list_2}</li>
                                     <li>{data.feature_list_3}</li>
@@ -32,8 +32,10 @@ function Pricing() {
                                     <li>{data.feature_list_5}</li>
                                     </ul>
                                 </CardContent>
-                                <CardActions>
-                                    <Button size="small">Get started</Button>
+                                <CardActions className='button_Container_box' >
+                                    <Grid item lg={12} md={12} sm={12} xs={12} className='button_Container'>
+                                    <Button size="small" className='button_text'>Get started</Button>
+                                    </Grid>
                                 </CardActions>
                             </Card>
                         </Grid>)
