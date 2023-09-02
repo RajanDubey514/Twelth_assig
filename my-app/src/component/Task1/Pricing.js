@@ -1,11 +1,11 @@
 import React from 'react'
-import { Grid, Typography, Card, CardActions, CardContent, Button } from '@mui/material'
+import { Grid, Typography, Card, CardActions, CardContent, Button , Container } from '@mui/material'
 import  objArr  from '../Data'
 import './pricing.css';
 
 function Pricing() {
     return (
-        <Grid container className="pricing_comntainer">
+        <Container className="pricing_comntainer">
             <Grid item lg={12} md={12} sm={12} xs={12} className="pricing_head_container">
                 <Typography variant="p" className="pricing_head">Pricing</Typography>
             </Grid>
@@ -40,7 +40,7 @@ function Pricing() {
                 })
             }
             </Grid>
-        </Grid>
+        </Container>
     )
 }
 
