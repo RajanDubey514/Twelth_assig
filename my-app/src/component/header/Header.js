@@ -3,7 +3,6 @@ import { Grid,AppBar,Toolbar,Typography , Container } from '@mui/material';
 import './headerStyle.css';
 import { useNavigate } from "react-router-dom";
 
-
 export default function Header() {
 
   //use for navigation using react-dom

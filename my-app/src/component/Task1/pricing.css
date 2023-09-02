@@ -21,7 +21,7 @@
 }
 .pricing_header{
     color: #000;
-    font-size: 32px;
+    font-size: 34px;
     font-weight: 800;
 }
 .pricing_para_container{
@@ -52,15 +52,17 @@ ul {
   .card_Container {
     border: 1px solid #434ce7;
     border-radius: 10px !important;
+    padding:"20px";
+    margin:"10px" ;
     display: block;
     top: 0px;
     position: relative;
     background-color: #f2f8f9;
-    padding: 32px 24px;
-    margin: 12px;
     text-decoration: none;
     z-index: 0;
-    overflow: hidden;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
   
     &:hover {
       transition: all 0.2s ease-out;
@@ -117,4 +119,88 @@ ul {
     font-size: 16px !important;
     font-weight: 800 !important;
     color: #fff !important;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .pricing_head_container{
+        margin-top: 20px !important;
+    }
+    .pricing_head{
+        font-size: 16px;
+    }
+    .pricing_header{
+        font-size: 28px;
+    }
+    .pricing_para_container{
+        margin-bottom: 20px !important;
+    }
+    .pricing_para{
+        font-size: 13px;
+    }
+    .card_heading1{
+        margin-top: 15px;
+        margin-bottom: 14px;
+        line-height: 24px;
+        font-size: 34px;
+    }
+    .card_heading2{
+        margin-top: 15px;
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .card_heading3{
+        line-height: 25px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    li{
+        font-size: 12px ;
+      }
+      .button_text{
+        font-size: 16px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px){
+    .pricing_head_container{
+        margin-top: 10px !important;
+    }
+    .pricing_head{
+        font-size: 14px;
+    }
+    .pricing_header{
+        font-size: 24px;
+    }
+    .pricing_para_container{
+        margin-bottom: 15px !important;
+    }
+    .pricing_para{
+        font-size: 12px;
+    }
+    .card_heading1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 20px;
+        font-size: 30px;
+    }
+    .card_heading2{
+        margin-top: 10px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .card_heading3{
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    li{
+        font-size: 12px ;
+      }
+      .button_text{
+        font-size: 14px !important;
+    }
+
 }

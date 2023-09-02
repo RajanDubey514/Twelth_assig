@@ -1,7 +1,6 @@
 .appBar{
-    background-color: #fff !important;
+    background-color: #434ce7 !important;
     box-shadow: none;
-    
 }
 .appBar_container{
     cursor: pointer;
@@ -9,7 +8,7 @@
 .appBar_name{
     font-weight: 400 !important;
     line-height: 36px;
-    color: black;
+    color: #fff;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -21,23 +20,48 @@
     line-height: 20px;
     font-size: 18px;
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    color: black;
+    color: #fff;
 }
 
 .appBar_name:hover{
-    background-color: #0a95ff;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     border-radius: 40px;
 }
 .appBar_comp:hover{
-    background-color: #0a95ff;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 40px;
 }
 
+@media only screen and (max-width: 767px){
+    .appBar_name{
+      font-size: 14px !important;
+      padding-left: 12px;
+      padding-right: 12px;
 
+    }
+    .appBar_comp{
+        font-size: 14px !important;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 404px){
+    .appBar_name{
+      font-size: 12px !important;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .appBar_comp{
+        font-size: 12px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
